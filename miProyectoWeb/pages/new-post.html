@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="../styles/main-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Create New Post</h1>
+        <nav>
+            <a href="../pages/main-page.html">Back to Feed</a>
+            <a href="../pages/login-page.html">Log out</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="new-post-form">
+            <label for="title">Title:</label><br />
+                <input type="text" id="title" name="title" required /><br /><br />
+
+            <label for="content">Content:</label><br />
+                <textarea id="content" name="content" rows="8" required></textarea><br /><br />
+
+            <button type="submit">Publish</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AnalogicGoose</p>
+    </footer>
+    <script src="../scripts/new-post.js"></script>
+</body>
+</html>
