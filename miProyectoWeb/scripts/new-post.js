@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (!currentUser) {
+        window.location.href = "login-page.html";
+        return;
+    }
+
+    const userInfo = document.getElementById("user-info");
+    if (userInfo) {
+        userInfo.textContent = `Logged in as: ${currentUser}`;
+        console.log("User is logged");
+    }
+
     const form = document.getElementById("new-post-form");
 
     form.addEventListener("submit", (e) => {
